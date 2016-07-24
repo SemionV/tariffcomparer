@@ -1,0 +1,28 @@
+[
+	{
+		"$type": "CostCalculator.Domain.BasicTariff, CostCalculator",
+		"Name": "Basic Tariff",
+		"BaseCostPerMonth": 5,
+		"ConsumptionCost": 0.22
+	},
+	{
+		"$type": "CostCalculator.Domain.BasicTariff, CostCalculator",
+		"Name": "Basic Tariff 2",
+		"BaseCostPerMonth": 7,
+		"ConsumptionCost": 0.14
+	},
+	{
+		"$type": "CostCalculator.Domain.PackagedTariff, CostCalculator",
+		"Name": "Packaged Tariff",
+		"Limit": 4000,
+		"PriceBelowLimit": 800,
+		"ExtraConsumptionCost": 0.3
+	},
+	{
+		"$type": "CostCalculator.Domain.PackagedTariff, CostCalculator",
+		"Name": "Packaged Tariff 2",
+		"Limit": 4100,
+		"PriceBelowLimit": 820,
+		"ExtraConsumptionCost": 0.23
+	}
+]

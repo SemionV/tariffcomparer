@@ -1,0 +1,8 @@
+/.vs/
+/CostCalculator/bin/
+/CostCalculator/obj/
+/TariffComparer/bin/
+/TariffComparer/obj/
+/XUnitTests/bin/
+/XUnitTests/obj/
+/packages/
