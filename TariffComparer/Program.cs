@@ -12,6 +12,12 @@ namespace TariffComparer
 
         static void Main(string[] args)
         {
+            if (args == null || args.Length == 0)
+            {
+                Console.WriteLine($"Please pass path to Tariffs definition file argument to the program.");
+                return;
+            }
+
             string path = args[0];
             if (!Path.IsPathRooted(path))
             {
@@ -21,6 +27,7 @@ namespace TariffComparer
             if (!File.Exists(path))
             {
                 Console.WriteLine($"Tariffs declaration file does not exists at \"{path}\"");
+                return;
             }
 
             AppContext.TariffsFile = path;
